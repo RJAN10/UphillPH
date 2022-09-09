@@ -1,0 +1,138 @@
+// Colors
+$global-pagecolor-one:#eaeaea;
+$global-pagecolor-two:#a9cdcb;
+$global-pagecolor-three:#98c3c1;
+$global-pagecolor-four:#87b9b7;
+$global-pagecolor-five:#6eaca9;
+
+// Font Styles
+$global-fontstyle-headers: 'Open Sans', sans-serif;
+$global-fontstyle-subheaders: 'Cormorant Garamond', serif;
+$global-fontstyle-bodytext: 'Domine', serif;
+
+// Keyframes
+@import 'keyframes';
+@import 'mobilestyle';
+@import 'buttonstyle';
+@import 'navbar';
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+// Search Overlay Style
+.searchOverlay-section{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.726);
+    .searchOverlay-closeBtn{
+      position: absolute;
+      top: 1.5in;
+      right: 45px;
+      font-size: 60px;
+      cursor: pointer;
+      font-weight: 900;
+      color: white;
+      :hover{
+          color: $global-pagecolor-four;
+      }
+    }
+    input[type=text]{
+      padding: 15px;
+      font-size: 17px;
+      border: none;
+      float: left;
+      width: 80%;
+      background: white;
+      :hover{
+          background: #f1f1f1;
+      }
+    }
+    button{
+      float: left;
+      width: 20%;
+      padding: 15px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover{
+        background: #bbb;
+    }
+    .overlay-content {
+        position: relative;
+        top: 46%;
+        width: 80%;
+        text-align: center;
+        margin-top: 30px;
+        margin: auto;
+      }
+  }
+
+// Banner Container
+.banner-sectioncontainermain{
+    margin-top: 120px;
+    .header-topheader-banner{
+        min-height: 100vh;
+        width: 100%;
+        // Banner Image 
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4, 9, 30, 0.226)), url(Images/samplePhoto1.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+}
+    // Text Container Style
+    .text-banner-description-layercontainer{
+        min-height: calc(100vh - 300px);
+        // background-color: #6eaca9;
+        display: flex;
+        // text-align: center;
+        position: relative;
+        font-family: $global-fontstyle-bodytext;
+        font-size: 2vw;
+        color: $global-pagecolor-one;
+        .textcontainer-banner{
+            // background-color: #f1f1f1;
+            padding: 10px 90px;
+            width: 50%;
+            top: 40%;
+            right: 50%;
+            position: absolute;
+            h6, h1, p{
+                margin-bottom: 12px;
+            }
+        }
+        .right-text-placeholder{
+            display: none;
+        }
+    }
+
+.navstick-topstyle{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar-section-mainmenu .container-links-mainmenu .container-button-mainmenu:hover .buttoncontainer-dropdown{
+    display: block !important;
+}
+
+.bannerimage-sectionbodycontainer{
+    min-height: 100vh;
+    width: 100%;
+    // Banner Image 
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(19, 25, 48, 0.116)), url(Images/HP-banner-canyon-spectral-125-my22-m.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}

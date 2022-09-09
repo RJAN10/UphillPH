@@ -1,0 +1,23 @@
+.text-banner-description-layercontainer .textcontainer-banner .buttonbanner-container{
+    margin-top: 8px;
+    button{
+        font-size: 1vw;
+        font-family: $global-fontstyle-bodytext;
+        padding: 0.8rem 2.5rem;
+        margin-top: 20px;
+        cursor: pointer;
+        font-weight: 500;
+        margin: 4px;
+        border: 1px $global-pagecolor-four;
+        background-color: $global-pagecolor-four;
+        color: white;
+    }
+    .buttonbanner-one{
+        background-color: rgba(223, 223, 223, 0.233);
+    }
+}
+.text-banner-description-layercontainer .textcontainer-banner .buttonbanner-container button:hover{
+    background-color: rgba(223, 223, 223, 0.411);
+    border: 1px white;
+    transition: 2ms;
+}
