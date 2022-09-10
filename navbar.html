@@ -8,6 +8,17 @@
     <title>Document</title>
 </head>
 <body>
+         <!-- Overlay Search -->
+         <div id="myOverlay" class="searchOverlay-section" >
+            <span class="searchOverlay-closeBtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="bi bi-search"></i></button>
+              </form>
+            </div>
+          </div>
+
 <div class="navbarsection-containermain"  id="navbar">
     <nav class="navbar-section-home" >
         <!-- Logo Section -->
@@ -31,7 +42,7 @@
         <div class="container-links-navbar borgiercontainer-mobile">
             <ul class="navbar-list">
                 <li><a href="forbidden.html" class="bi bi-person-circle" title="Your Profile"></a></li>
-                <li><a class="bi bi-search openBtn" o></a></li> 
+                <li><a class="bi bi-search openBtn"></a></li> 
             </ul>
         </div>
     </nav>
@@ -117,6 +128,6 @@
     </nav>
   </div>
   
-    
+  <script src="script.js"></script>
 </body>
 </html>
