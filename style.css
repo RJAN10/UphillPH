@@ -245,16 +245,11 @@
   font-weight: 300;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .forb {
   background: #233142;
 }
 
-.whistle {
+.forb .whistle {
   width: 20%;
   fill: #f95959;
   margin: 100px 40%;
