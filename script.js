@@ -16,3 +16,17 @@ function closeSearch() {
     }
     prevScrollpos = currentScrollPos;
   }
+
+  const nav = document.querySelector('.navbar')
+  fetch('navbar.html')
+  .then(res=>res.text())
+  .then(data=>{
+    nav.innerHTML=data
+  })
+
+  const nav2 = document.querySelector('.footer')
+  fetch('footer.html')
+  .then(res=>res.text())
+  .then(data=>{
+    nav2.innerHTML=data
+  })
